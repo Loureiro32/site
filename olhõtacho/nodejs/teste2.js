@@ -1,9 +1,9 @@
 var mysql = required ('mysql');
 
 var con = mysql.createConnection({
-  host: "localhost",
-  user: "yourusername",
-  password: "yourpassword"
+  host: "",
+  user: "",
+  password: ""
 });
 
 con.connect(function(err) {
