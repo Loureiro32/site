@@ -1,7 +1,7 @@
 var mysql = required ('mysql');
 
 var con = mysql.createConnection({
-  host: "Mysql80",
+  host: "MySQL80",
   user: "root",
   password: "loureiro123?"
 });
