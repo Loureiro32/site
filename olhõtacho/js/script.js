@@ -41,3 +41,14 @@ $('.tab a').on('click', function (e) {
   $(target).fadeIn(800);
   
 });
+
+const phoneInput = document.querySelector("#phone");
+
+phoneInput.addEventListener("input", function(event) {
+  let x = event.target.value.replace(/\D/g, "");
+  x = x.slice(0,10);
+  let y = x.match(/(\d{3})(\d{3})(\d{4})/);
+  if (y) {
+    event.target.value = `(${y[1]}) ${y[2]}-${y[3]}`;
+  }
+});
