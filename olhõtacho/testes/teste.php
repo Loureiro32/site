@@ -1,30 +1,21 @@
 <?php
-// database connection code
-if(isset($_POST['txtName']))
-{
-// $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$con = mysqli_connect('localhost', 'root', '','db_contact');
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
+  
+  // Connect to the database
+  $dbc = mysqli_connect('localhost', 'username', 'password', 'database_name');
 
-// get the post records
+  // Insert the user data into the database
+  $query = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+  mysqli_query($dbc, $query);
 
-$txtName = $_POST['txtName'];
-$txtEmail = $_POST['txtEmail'];
-$txtPhone = $_POST['txtPhone'];
-$txtMessage = $_POST['txtMessage'];
+  // Close the connection
+  mysqli_close($dbc);
 
-// database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
-
-// insert in database 
-$rs = mysqli_query($con, $sql);
-if($rs)
-{
-	echo "Contact Records Inserted";
-}
-}
-else
-{
-	echo "Are you a genuine visitor?";
-	
+  // Redirect to the home page
+  header('Location: index.php');
+  exit;
 }
 ?>
