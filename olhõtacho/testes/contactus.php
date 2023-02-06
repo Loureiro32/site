@@ -9,7 +9,7 @@ $con = mysqli_connect('localhost', 'root', '','db_contact');
 
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
-$txtPhone = $_POST['txtPhone'];
+$txtPhone = $_POST['txtPhone']; // Trocar para assunto
 $txtMessage = $_POST['txtMessage'];
 
 // database insert SQL code
