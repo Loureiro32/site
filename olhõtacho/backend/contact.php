@@ -9,22 +9,22 @@ $con = mysqli_connect('localhost', 'root', '','db_contact'); // falta conexão c
 
 $txtName = $_POST['txtName'];
 $txtEmail = $_POST['txtEmail'];
-$txtPhone = $_POST['txtPhone']; // Trocar para assunto
+$txtsubject = $_POST['txtsubject'];
 $txtMessage = $_POST['txtMessage'];
 
 // database insert SQL code
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtsubject', '$txtMessage')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
 if($rs)
 {
-	echo "Contact Records Inserted";
+	echo "Contacto efetuado, aguarda por uma Resposta!";
 }
 }
 else
 {
-	echo "Are you a genuine visitor?";
+	echo "Impossivel fazer contacto com o suport atualmente tenta novamente mais tarde";
 	
 }
 ?>
