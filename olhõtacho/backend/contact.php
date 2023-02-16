@@ -12,7 +12,7 @@ $txtEmail = $_POST['txtEmail'];
 $txtsubject = $_POST['txtsubject'];
 $txtMessage = $_POST['txtMessage'];
 
-// database insert SQL code
+// database insert SQL code                                       Mudar
 $sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtsubject', '$txtMessage')";
 
 // insert in database 
