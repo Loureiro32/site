@@ -3,7 +3,7 @@
 if(isset($_POST['txtName']))
 {
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$con = mysqli_connect('localhost', 'root', '','db_contact'); // falta conexão com a base de dados.
+$con = mysqli_connect('localhost', 'root', 'Dragoes123?','olhotacho'); // falta conexão com a base de dados.
 
 // get the post records
 
@@ -13,7 +13,7 @@ $txtsubject = $_POST['txtsubject'];
 $txtMessage = $_POST['txtMessage'];
 
 // database insert SQL code                                       Mudar
-$sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtsubject', '$txtMessage')";
+$sql = "INSERT INTO `contact` (`Id`, `fldName`, `fldEmail`, `fldsubject`, `fldMessage`) VALUES ('0', '$txtName', '$txtEmail', '$txtsubject', '$txtMessage')";
 
 // insert in database 
 $rs = mysqli_query($con, $sql);
