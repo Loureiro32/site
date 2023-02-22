@@ -3,7 +3,7 @@
 if(isset($_POST['txtName']))
 {
 // $con = mysqli_connect('localhost', 'database_user', 'database_password','database');
-$con = mysqli_connect('localhost', 'root', 'Dragoes123?','olhotacho'); // falta conexão com a base de dados.
+$con = mysqli_connect('localhost', 'root', 'Dragoes123?','olhotacho');
 
 // get the post records
 
@@ -25,6 +25,5 @@ if($rs)
 else
 {
 	echo "Impossivel fazer contacto com o suport atualmente tenta novamente mais tarde";
-	
 }
 ?>
