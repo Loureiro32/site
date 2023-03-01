@@ -62,7 +62,7 @@
                         <a href="#contact" class="nav-item nav-link">Contacto</a>
                         <!--<a href="../olhõtacho/login.html" class="nav-item nav-link">Login</a>-->
                     </div>
-                        <a href="..//olhõtacho/login.html" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Login</a>
+                        <a class="login-trigger" href="#" data-target="#login" data-toggle="modal" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Login</a>
                 </div>
             </nav>
 
@@ -500,6 +500,24 @@
           <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
         <!--Galeria End-->
 
+        <!--Testes Login-->
+        <div id="login" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+              
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button data-dismiss="modal" class="close">&times;</button>
+                  <h4>Login</h4>
+                  <form>
+                    <input type="text" name="username" class="username form-control" placeholder="Username"/>
+                    <input type="password" name="password" class="password form-control" placeholder="password"/>
+                    <input class="btn login" type="submit" value="Login" />
+                  </form>
+                </div>
+              </div>
+            </div>  
+          </div>
+        <!--Fim testes-->
 
         <!-- Testimonial Start 
         <div class="container-xxl py-5" id="review">
