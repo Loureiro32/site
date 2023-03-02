@@ -1,5 +1,5 @@
 :root {
-    --primary: #ec9a00;
+    --primary: #ae6300;
     --secondary: #8F12FD;
     --light: #F0F6FF;
     --dark: #262B47;
@@ -558,7 +558,8 @@ h4 {
 }
 .close {
   color: #000000;
-  transform: scale(1.2)
+  transform: scale(1.2);
+  margin-left: 450px;
 }
 .modal-content {
   font-weight: bold;
