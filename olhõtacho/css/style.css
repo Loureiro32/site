@@ -563,7 +563,7 @@ h4 {
 }
 .modal-content {
   font-weight: bold;
-  background: linear-gradient(to bottom right,#F87E7B,#B05574);
+  background: linear-gradient(to bottom right,#ae6300,#8F12FD);
 }
 .form-control {
   margin: 1em 0;
@@ -599,6 +599,9 @@ h4 {
   margin-top: 1em;
 }
 .login:hover {
-  background: #FAB87F;
-  color: #fff;
+  background: #ae6300;
+  color: #8F12FD;
 }
+
+--primary: #ae6300;
+--secondary: #8F12FD;
