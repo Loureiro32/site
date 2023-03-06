@@ -1,23 +1,11 @@
-$(document).ready(function(){
+const wrapper = document.querySelector('.wrapper');
+const loginLink = document.querySelector('.login-link');
+const registerLink = document.querySelector('.register-link');
 
-    //active start button
+registerLink.addEventListener('click', ()=> {
+  wrapper.classList.add('active');
+});
 
-    $(‘.start-btn’).click(function(){
-
-      $(‘.modal-box’).toggleClass(“show-modal”);
-
-      $(‘.start-btn’).toggleClass(“show-modal”);
-
-    });
-
-    // active cancle button
-
-    $(‘.fa-times’).click(function(){
-
-      $(‘.modal-box’).toggleClass(“show-modal”);
-
-      $(‘.start-btn’).toggleClass(“show-modal”);
-
-    });
-
-  });
+registerLink.addEventListener('click', ()=> {
+  wrapper.classList.remove('active');
+});

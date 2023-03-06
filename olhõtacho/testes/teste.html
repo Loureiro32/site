@@ -1,41 +1,80 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-   <head>
-      <meta charset="utf-8">
-      <title>Login Form Design | CodeLab</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <div class="wrapper">
-         <div class="title">
-            Login Form
-         </div>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+   
+   <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon>
+      </span>
+      
+      <div class="form-box login">
+         <h2>Login</h2>
          <form action="#">
-            <div class="field">
-               <input type="text" required>
-               <label>Email Address</label>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
             </div>
-            <div class="field">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
                <input type="password" required>
                <label>Password</label>
             </div>
-            <div class="content">
-               <div class="checkbox">
-                  <input type="checkbox" id="remember-me">
-                  <label for="remember-me">Remember me</label>
+               <div class="remember-forgot">
+                  <label><input type="checkbox">
+                     Remember me</label>
+                     <a href="#">Forgot Password?</a>
                </div>
-               <div class="pass-link">
-                  <a href="#">Forgot password?</a>
+               <button type="submit" class="btn">Login</button>
+               <div class="login-register">
+                  <p> Not a member? <a href="#" class="register-link">Signup now</a></p>
                </div>
-            </div>
-            <div class="field">
-               <input type="submit" value="Login">
-            </div>
-            <div class="signup-link">
-               Not a member? <a href="#">Signup now</a>
-            </div>
          </form>
       </div>
-   </body>
+
+
+
+      <div class="form-box register">
+         <h2>Register</h2>
+         <form action="#">
+            <div class="input-box">
+               <span class="icon"><ion-icon name="person"></ion-icon></span>
+               <input type="text" required>
+               <label>Username</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="mail"></ion-icon></span>
+               <input type="email" required>
+               <label>Email</label>
+            </div>
+            <div class="input-box">
+               <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+               <input type="password" required>
+               <label>Password</label>
+            </div>
+               <div class="remember-forgot">
+                  <label><input type="checkbox">
+                     I agree to the terms & conditions</label>
+                     <a href="#"></a>
+               </div>
+               <button type="submit" class="btn">Login</button>
+               <div class="login-register">
+                  <p> Already have account? <a href="#" class="register-link">Login</a></p>
+               </div>
+         </form>
+      </div>
+   </div>
+
+
+   <script src="../testes/script.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
