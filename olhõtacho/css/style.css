@@ -592,15 +592,15 @@ h4 {
   padding: 6px 20px;
   border-radius: 20px;
   background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
+  border: 2px solid #ebebeb;
+  color: #ffffff;
   font-weight: bold;
   transition: all .5s;
   margin-top: 1em;
 }
 .login:hover {
-  background: #ae6300;
-  color: #8F12FD;
+  background: transparent;
+  color: #6500be;
 }
 .signup-link{
     color: #ffffff;
