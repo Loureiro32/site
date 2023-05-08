@@ -1,5 +1,5 @@
 :root {
-    --primary: #ae6300;
+    --primary: #4294E3;
     --secondary: #8F12FD;
     --light: #F0F6FF;
     --dark: #262B47;
@@ -544,7 +544,7 @@ p.desc:hover {
 .login-trigger {
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(to bottom right, #B05574, #F87E7B);
+  background: linear-gradient(to bottom right, #4294E3, #4294E3);
   padding: 15px 30px;
   border-radius: 30px;
   position: relative; 
