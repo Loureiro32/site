@@ -499,9 +499,10 @@ h6,
     padding-right: 0;
     border-right: none;
 }
-
+/*** Galeria ***/
 img {
 	height: 300px;
+    width: 250px;
 }
 .cardholder {
   margin-top: 150px;
@@ -563,7 +564,7 @@ h4 {
 }
 .modal-content {
   font-weight: bold;
-  background: linear-gradient(to bottom right,#ae6300,#8F12FD);
+  background: linear-gradient(to bottom right,#7a00e4,#4294E3);
 }
 .form-control {
   margin: 1em 0;
