@@ -561,6 +561,7 @@ h4 {
   color: #000000;
   transform: scale(1.2);
   margin-left: 450px;
+  &:hover{cursor: pointer;};
 }
 .modal-content {
   font-weight: bold;
